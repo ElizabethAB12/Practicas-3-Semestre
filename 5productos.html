@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suma de Precio de 5 Productos</title>
+</head>
+<body>
+<h2>Suma de Precio de 5 Productos</h2>
+<form action="#" method="post" id="sumForm">
+<label for="producto1">Producto 1:</label>
+<input type="text" name="producto1" required>
+<input type="number" name="precio1" required pattern="[0-9]+([\.][0-9]+)?"
+step="0.01"><br><br>
+<label for="producto2">Producto 2:</label>
+<input type="text" name="producto2" required>
+<input type="number" name="precio2" required pattern="[0-9]+([\.][0-9]+)?"
+step="0.01"><br><br>
+<label for="producto3">Producto 3:</label>
+<input type="text" name="producto3" required>
+<input type="number" name="precio3" required pattern="[0-9]+([\.][0-9]+)?"
+step="0.01"><br><br>
+<label for="producto4">Producto 4:</label>
+<input type="text" name="producto4" required>
+<input type="number" name="precio4" required pattern="[0-9]+([\.][0-9]+)?"
+step="0.01"><br><br>
+<label for="producto5">Producto 5:</label>
+<input type="text" name="producto5" required>
+<input type="number" name="precio5" required pattern="[0-9]+([\.][0-9]+)?"
+step="0.01"><br><br>
+<input type="submit" name="calcular" value="Calcular" onclick="calcularTotal()">
+<input type="reset" value="Restablecer">
+</form>
+<script>
+function calcularTotal() {
+var precio1 = parseFloat(document.getElementById("precio1").value);
+var precio2 = parseFloat(document.getElementById("precio2").value);
+var precio3 = parseFloat(document.getElementById("precio3").value);
+var precio4 = parseFloat(document.getElementById("precio4").value);
+var precio5 = parseFloat(document.getElementById("precio5").value);
+var total = precio1 + precio2 + precio3 + precio4 + precio5;
+document.getElementById("resultado").innerHTML = "<h3>Total a pagar:</h3><p>El total apagar por los productos es: " + total.toFixed(2) + "</p>";
+}
+</script>
+<div class="igual">
+<div id="vert"></div>
+<input type="button" name="ver" value="Ver" onclick="verTotal()">
+<script>
+function verTotal() {
+var precio1 = parseFloat(document.getElementById("precio1"));
+var precio2 = parseFloat(document.getElementById("precio2"));
+var precio3 = parseFloat(document.getElementById("precio3"));
+var precio4 = parseFloat(document.getElementById("precio4"));
+var precio5 = parseFloat(document.getElementById("precio5"));
+var total = precio1 + precio2 + precio3 + precio4 + precio5;
+document.getElementById("vert").innerHTML = "<h3>Total a pagar:</h3><p>El total apagar por los productos es: " + total.toFixed(2) + "</p>";
+}
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECYTEM COACALCO| Cuidado de la salud Mental y prevención de adicciones.</title>
+
+    
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo.ico">
+    <style>
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+label{
+ display: block;  
+  background-color: #d2b48c;  
+  font-size: 21px;
+}
+input{
+    background-color:#ffffff;
+    color: black;
+    font-size: 16px;
+}
+.label-nombre {
+    background-color: #eedcc6; 
+}
+.label-correo {
+    background-color: #9fd5e7; 
+}
+.label-edad {
+    background-color: #ffd3ac; 
+}
+.label-genero {
+    background-color: #b1e6b3; 
+}
+.label-pregunta1 {
+    background-color: #ffffae;
+}
+.label-pregunta2 {
+    background-color: #cacafa; 
+}
+.label-pregunta3 {
+    background-color: #fda4b3;
+}
+.label-pregunta4 {
+    background-color: #79ccec; 
+}
+.label-pregunta5 {
+    background-color: #f08080;
+}
+.label-pregunta6 {
+    background-color: #abffff;
+}
+textarea{
+    background-color:#ffffff;
+
+}
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 10px); /* Reducir el ancho del input para dejar espacio para el borde */
+    padding: 5px;
+    color: #666666; /* Color del texto del input */
+    border: 1px solid #cccccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar los botones horizontalmente */
+    margin-top: 10px; /* Agregar espacio entre el último input y los botones */
+}
+
+/*Seccion de el checkbox*/
+.condiciones1 label {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.condiciones1 input[type="checkbox"] {
+    margin-right: 10px; /* Ajusta el espacio entre el checkbox y el texto */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.condiciones1 span {
+    color: #000000; /* Cambia el color del texto */
+}
+
+/*Checkbox de politicas*/
+.condiciones2 label {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.condiciones2 input[type="checkbox"] {
+    margin-right: 10px; /* Ajusta el espacio entre el checkbox y el texto */
+    border-radius: 5px; /* Bordes redondeados del input */
+}
+
+.condiciones2 span {
+    color: #000000; /* Cambia el color del texto */
+}
+
+/*Seccion de botones*/
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+    background-color: #9563BA; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Padding del botón */
+    border: none; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    margin-right: 10px; /* Margen derecho entre botones */
+    margin-bottom: 4px;
+    font-size: 19px;
+}
+
+.button-container input[type="submit"]:hover,
+.button-container input[type="reset"]:hover {
+    background-color: #BB85E3 ; /* Color de fondo del botón al pasar el cursor */
+    
+}
+
+.espacio1 {
+    margin-bottom: 25px; /* Puedes ajustar el valor según sea necesario */
+}
+
+.box1{
+    text-align: center;
+    
+}
+
+.box1 h1{
+    
+    font-size: 29px;
+    color: white;
+}
+.espacio2 {
+    margin-bottom: 55px; /* Puedes ajustar el valor según sea necesario */
+}
+select {
+    font-size: 17px; /* Tamaño de la fuente */
+    border-radius: 5px;
+}
+.boxdatos{
+    background-color: rgb(177, 155, 189);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.espacio3 {
+    margin-bottom: 17px; /* Puedes ajustar el valor según sea necesario */
+}
+.espacio4 {
+    margin-bottom: 60px; /* Puedes ajustar el valor según sea necesario */
+}
+.boxencuesta{
+    background-color: rgb(177, 155, 189);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.espacio5 {
+    margin-bottom: 18px; /* Puedes ajustar el valor según sea necesario */
+}
+.encuesta {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.encuesta label {
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+.encuesta textarea {
+    width: calc(100% - 10px); /* Reducir el ancho del input para dejar espacio para el borde */
+    padding: 5px;
+    color: #000000; /* Color del texto del input */
+    border: 1px solid #cccccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados del input */
+    background-color: white;
+    font-size: 17px;
+}
+.label-calificacion {
+    background-color: #c1d48d;
+}
+.label-comentario {
+    background-color: #e2ad7c;
+}
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-hero">
+                <div class="container hero">
+
+                    <div class="container-logo">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <img src="cecytem-logo-57EA94498B-seeklogo.com.png" alt="logo" width="65" height="75">
+                    </div>
+
+                    <div class="customer-support">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="content-customer-support">
+                            <span class="text1">CECYTEM COACALCO</span>
+                            <span class="text2">“Sin drogas no hay lío, sigue tu propio río”</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu">
+               <li><a href="#">Contacto</a></li>  <!-- Falta: Poner los enlaces a las demas paginas -->
+               <li><a href="#">Acerca De Nosotros</a></li>   <!-- Falta: Poner los enlaces a las demas paginas -->
+            </ul>
+
+        </nav>
+    </header>
+    
+    <nav class="secciones">
+        <ul>
+            <li><a class="elemento-1" href="Introduccion.html">INTRODUCCION</a></li>
+            <li><a class="elemento-2" href="drogas.html">DROGAS</a></li>
+            <li><a class="elemento-3" href="adiccion.html">ADICCION</a></li>
+            <li><a class="elemento-4" href="saludmental.html">SALUD MENTAL</a></li>
+            <li><a class="elemento-5" href="prevencion.html">PREVENCION</a></li>
+            <li><a class="elemento-6" href="importancia.html">IMPORTANCIA</a></li>
+            <li><a class="elemento-7" href="formulario.html">FORMULARIO</a></li>
+        </ul>
+    </nav>
+
+    <header class="head2">
+    </header>
+
+    <div class="espacio1"></div>
+
+    <div class="box1">
+        <h1>
+            Este formulario nos ayuda a entender mejor el uso de sustancias y sus impactos.
+            <br>A través de esta información, podemos desarrollar estrategias más efectivas de prevención y apoyo.
+        </h1>
+    </div>
+
+    <div class="espacio2"></div>
+
+    <div class="boxdatos">
+        <h1>Datos Personales</h1>
+    </div>
+
+    <div class="espacio3"></div>
+
+    <form action="proyecto.php" name="ejemplo" method="post">
+        
+        <div class="form-group">
+            <label for="nombre" class="label-nombre">Nombre (opcional):</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+        
+        <div class="form-group">
+            <label for="correo" class="label-correo">Correo Electrónico (obligatorio):</label>
+            <input type="email" name="correo" id="correo" placeholder="nombre@ejemplo.com" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="edad"class="label-edad">Edad (obligatorio):</label>
+            <input type="number" name="edad" id="edad" placeholder="ejemplo: 17" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="genero"class="label-genero">Género (obligatorio):</label>
+            <select id="genero" name="genero" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Prefiero no decir">Prefiero no decir</option>
+                <option value="Otro">Otro</option>
+            </select>
+            
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta1"class="label-pregunta1">¿Alguna vez te has drogado?</label>
+            <select id="pregunta1" name="pregunta1" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta2"class="label-pregunta2">¿Qué drogas has consumido?</label>
+            <input type="text" name="pregunta2" id="pregunta2" placeholder="Escribe ninguna si no has probado nada." required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta3"class="label-pregunta3">¿Conoces personas adictas?</label>
+            <select id="pregunta3" name="pregunta3" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta4"class="label-pregunta4">¿Te han ofrecido alguna droga?</label>
+            <select id="pregunta4" name="pregunta4" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta5"class="label-pregunta5">¿Estás buscando ayuda para dejar las drogas?</label>
+            <select id="pregunta5" name="pregunta5" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="pregunta6"class="label-pregunta6">¿Te interesaría recibir información sobre esta página a tu correo?</label>
+            <select id="pregunta6" name="pregunta6" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        
+        <div class="condiciones1">
+            <label>
+                <input type="checkbox" required>
+                <span class="texto-checkbox">Acepto que mis datos se guarden en el sistema.</span>
+            </label>
+        </div>
+
+        <div class="condiciones2">
+            <label>
+                <input type="checkbox" required>
+                <span class="texto-checkbox">He leído las</span> <p><a href="politicas.html">Políticas de Privacidad.</a></p>
+            </label>
+        </div>
+
+        <div class="espacio4"></div>
+
+        <div class="boxencuesta">
+            <h1>Encuesta sobre la página</h1>
+        </div>
+
+        <div class="espacio5"></div>
+
+        <div class="encuesta">
+            <label for="calificacion" class="label-calificacion">Califique nuestra Página Web:</label>
+            <select id="calificacion" name="calificacion" required>
+                <option value="">Seleccione alguna opción</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Buena">Buena</option>
+                <option value="Regular">Regular</option>
+                <option value="Mala">Mala</option>
+            </select>
+        </div>
+
+        <div class="encuesta">
+            <label for="comentario" class="label-comentario">Comentario Adicional:</label>
+            <textarea name="comentario" id="comentario" cols="20" rows="05" placeholder="Escribe un mensaje en lo que podria mejorar o no la página." required></textarea>
+
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="button-container">
+                <input type="submit" name="enviar" value="Enviar" >
+                <input type="reset" value="Restablecer" onclick="imprimirMensaje2()">
+            </div>
+        </div>
+        
+        <script>
+            if (condición) {
+            imprimirMensaje1();
+            }
+            function imprimirMensaje1() {
+                alert("Tus datos han sido correctamente registrados");
+            }
+        </script>
+        <script>
+            if (condición) {
+            imprimirMensaje2();
+            }
+            function imprimirMensaje2(){
+                alert("Los campos que llenaste han sido vaciados, Vuele a regitrar tus datos.");
+            }
+        </script>
+    </form>
+    
+
+    
+    <br>
+
+</body>
+</html>

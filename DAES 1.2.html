@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pag web con formularios</title>
+        <style>
+            body {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(0, 0, 0);
+                align-items: center;
+            }
+            li {
+                font-family: cursive;
+                color: blueviolet;
+            }
+            h2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color:crimson;
+            }
+            h1 {
+                color: rgb(62, 153, 121);
+            }
+            header {
+                background-color: rgb(119, 115, 114);
+                color: rgb(255, 255, 255);
+                font-family: fantasy;
+                padding: 10px;
+                text-align: center;
+            }
+            section {
+                padding: 20px;
+                margin: 20px;
+                background-color: bisque;
+                border: 20px;
+            }
+            form {
+                margin-bottom: 20px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid rgb(78, 8, 0);
+                padding: 8px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Artistas Favoritos</h1>
+        </header>
+
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section>
+            <h2>Imágenes y Video</h2>
+            <img src="data:image/jpeg;base64,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" width="250" height="250" alt="Imagen">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEzyNxcdeUGO7c14amlVFSF1RKA6CCjOr8Q&s" width="250" height="250" alt="Imagen">
+            <video src="c:\Users\eliza\Downloads\programacion video.htm" width="320" height="240" controls>
+            </video>
+            <video src="" width="320" height="240" controls>
+            </video>
+        </section>
+        
+        <section>
+            <h2>Datos curiosos</h2>
+            <ul>
+                <li>Junior H cumple años en abril </li>
+                <li>Esta banda tuvo una serie en televisión </li>
+                <li>Su canción más famosa es Y Lloro</li>
+                <li>Su genero musical es pop</li>
+            </ul>
+        </section>
+            
+        <section>
+            <h2>Tabla de preferencias</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Canción Favorita</th>
+                    <th>Album Preferido</th>
+                </tr>
+                <tr>
+                    <td>Elizabeth</td>
+                    <td>Ask you tonight</td>
+                    <td>Elevate</td>
+                </tr>
+                <tr>
+                    <td>Naomi</td>
+                    <td>Miles de rosas</td>
+                    <td>$AD BOYZ 4 LIFE ll</td>
+                </tr>
+            </table>
+    </body>
+</html>

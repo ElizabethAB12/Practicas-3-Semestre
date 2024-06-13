@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORMULARIO DE SUMA</title>
+    </head>
+    <body>
+            <h1>Ingrese los numeros a sumar:</h1>
+            <form action="4num" method="post"></form>
+                <label for="cantidad">Numero 1</label>
+                <input type="text" id="num1" onchange="sumar();"><br>
+
+                <label for="cantidad">Numero 2</label>
+                <input type="text" id="num2" onchange="sumar();"><br>
+
+                <label for="cantidad">Numero 3</label>
+                <input type="text" id="num3" onchange="sumar();"><br>
+
+                <label for="cantidad">Numero 4</label>
+                <input type="text" id="num4" onchange="sumar();"><br>
+
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado">
+            <script>
+                // suma
+                function sumar(){
+                    var num1 =document.getElementById('num1').value;
+                    var num2 =document.getElementById('num2').value;
+                    var num3 =document.getElementById('num3').value;
+                    var num4 =document.getElementById('num4').value;
+
+                    if(num1!=='' && num2!=='' && num3!=='' && num4!=='') {
+                        var suma = parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4);
+                        document.getElementById('resultado').value = suma;
+                    }
+                }
+            </script>
+            </form>
+    </body>
+</html>

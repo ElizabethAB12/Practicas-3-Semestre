@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <style>
+            body {
+                background-color: rgb(200, 255, 175);
+                color: rgb(0, 0, 59);
+                font-family:unset;
+                margin: 20px;
+                align-items: center;
+                text-align: center;
+            }
+            h1 {
+                color: rgb(173, 86, 255);
+                font-size: 2.5rem;
+                font-family: cursive;
+            }
+            button {
+                background-color: rgb(255, 172, 185);
+                color: black;
+                padding: 10px;
+                border: none;
+                font-family: unset;
+                border-radius: 5px;
+                align-items: center;
+                cursor: pointer; 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Esta pagina web tiene JavaScript</h1>
+        <p>La página incluye botones interactivos como lo este:</p>
+        <button onclick="imprimirMensaje()">Mensaje</button>
+        <script>
+            function imprimirMensaje(){
+                document.getElementById("mensaje").innerHTML = "Hola mundo :]"
+            }
+        </script>
+
+        <div id="mensaje"></div>
+    </body>
+</html>

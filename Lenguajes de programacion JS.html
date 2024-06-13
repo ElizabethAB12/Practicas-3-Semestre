@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leng. de prog.</title>
+    <style>
+    body {
+        font-family: serif;
+        background-color: rgb(255, 255, 255);
+    }
+    form {
+        padding: 15px;
+        border-radius: 80px;
+        max-width: 1000px;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 1px rgb(255, 193, 231);
+        border-radius: 5px;
+    }
+    button {
+        background-color: rgb(255, 200, 208);
+        color: black;
+        padding: 10px;
+        border: none;
+        font-family: unset;
+        border-radius: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    header {
+        background-color: rgb(215, 239, 255);
+        color: rgb(2, 77, 33);
+        font-family: inherit;
+        font-style:oblique;
+        align-items:last baseline;
+        text-align:center;
+    }
+    nav {
+        background-color: rgb(255, 239, 230);
+        padding: 20px;
+        text-align:center;
+        align-items:last baseline;
+
+    }
+    footer {
+        background-color: rgb(241, 233, 255);
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+        text-align:center;
+        position:static;
+        bottom: 0;
+        width: 100%;
+    }
+    h3 {
+        border-bottom: 2px solid #5a008f;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.6rem;
+        color: rgb(10, 1, 139);
+        font-size: 3rem;
+    }
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        align-items: flex-start;
+        columns: 500px;
+    }
+    .box {
+        background-color: rgb(164, 255, 213);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+        box-shadow: 0 0 10px rgb(84, 127, 255);
+        align-items:normal;
+    }
+    u1 {
+        font-family: monospace;
+        background-color: rgb(186, 255, 232);
+        color: black;
+    }
+    h4 {
+        border-bottom: 2px solid #ae33f5;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+    .block,
+    lo {
+        padding: .5em;
+    }
+    </style>
+    </head>
+    <body>
+    <header>
+        <h3>“Lenguajes de programación para desarrollo de APPS de lado del cliente”</h3>
+        <img src="c:\ll\images (1).jfif" alt="logo" width="150" height="120">
+    </header>
+    <nav>
+        <h4>
+            <u1>
+                <li><a href="#cuidado agua">Introducción</a></li>
+                <li><a href="#INICIO">Lenguajes de Programación</a></li>
+                <li><a href="#GALERIA">Características</a></li>
+                <li><a href="#emergentes">Extra</a></li>
+                <li><a href="#ACERCA DE">Acerca de</a></li>
+            </u1>
+        </h4>
+    </nav>
+    <div class="container">
+        <div class="box" id="cuidado agua">
+            <h3>Introducción</h3>
+            <p>Los lenguajes de programación son el conjunto de instrucciones a través del cual los humanos interactúan con las computadoras. Un lenguaje de programación nos permite comunicarnos con las computadoras a través de algoritmos e instrucciones escritas en una sintaxis que la computadora entiende e interpreta en lenguaje de máquina.
+
+                Los lenguajes de programación permiten a las computadoras procesar de forma rápida y eficientemente grandes y complejas cantidades de información.</p>
+            <nav1>
+                <u1>
+                    <li><a href="https://www.pixartprinting.es/blog/lenguajes-de-programacion/">¿Qué son?</a></li>
+                    <li><a href="https://www.chakray.com/es/lenguajes-programacion-tipos-caracteristicas/">Características</a></li>
+                    <li><a href="https://talently.tech/blog/los-10-lenguajes-de-programacion-mas-utilizados/">Tipos</a></li>
+                </u1>
+            </nav1>
+        </div>
+        <div class="container">
+            <div class="box" id="INICIO">
+                <h3>Lenguajes de Programación</h3>
+                <p>En este apartado se hablara sobre cuatro diferentes tipos de lenguaje los cuales son:  </p>
+                <u2>
+                    <lo><a href="https://developer.mozilla.org/es/docs/Web/HTML">Html</a></lo>
+                    <lo><a href="https://www.ibm.com/mx-es/topics/java">Java</a></lo>
+                    <lo><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></lo>
+                    <lo><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></lo>
+
+                </u2>
+            </div>
+        </div>
+
+        <div class="box" id="GALERIA">
+            <h3>Características</h3>
+            <button onclick="imprimirMensaje()">HTML</button>
+            <script>
+            function imprimirMensaje(){
+                document.getElementById("mensaje").innerHTML = "Es fácil de usar y entender. *Es utilizado para crear páginas web. *Permite describir hipertextos."
+            }
+            </script>
+            <div id="mensaje"></div>
+
+            <button onclick="imprimirMensaje1()">CSS</button>
+            <script>
+            function imprimirMensaje1(){
+                document.getElementById("mensaje").innerHTML = "Es un lenguaje de programación diferente a HTML. *Permite el apilamiento de instrucciones para definir formatos específicos. *Es utilizable en todos los navegadores y plataformas."
+            }
+            </script>
+            <div id="mensaje"></div>
+
+            <button onclick="imprimirMensaje2()">Java</button>
+            <script>
+            function imprimirMensaje2(){
+                document.getElementById("mensaje").innerHTML = "Es SIMPLE. *Es ORIENTADO A OBJETOS. *Es DISTRIBUIDO. *Es de ARQUITECTURA NEUTRAL"
+            }
+            </script>
+            <div id="mensaje"></div>
+
+            <button onclick="imprimirMensaje3()">JavaScript</button>
+            <script>
+            function imprimirMensaje3(){
+                document.getElementById("mensaje").innerHTML = "Versatilidad. *Popularidad. *Carga del servidor. *Actualizaciones."
+            }
+            </script>
+            
+            <div id="mensaje"></div>
+        </div>
+
+        <div class="container">
+            <div class="box" id="emergentes">
+                <h1>Datos extra sobre la programación o creación de páginas web.</h1>
+                <button onclick="imprimirMensaje5()">Dato 1</button>
+                <script>
+                function imprimirMensaje5(){
+                    alert("La World Wide Web muestra la información de forma atractiva e intercambia información multimediática, interactiva y a distancia. Permite el acceso a información almacenada, pudiendo conectar con temas similares a través de hipervínculos, además admite el uso de otros protocolos como FPT o Chat.");
+                }
+                </script>
+            
+                <button onclick="imprimirMensaje6()">Dato 2</button>
+                <script>
+                function imprimirMensaje6(){
+                    alert("La importancia de una página web nace en la forma de entender que el internet es un lugar para todos, es en la actualidad uno de los medios de comunicación más utilizados por las masas, y es relevante para entender que vamos a encontrar todo lo que deseemos a través de este medio.");
+                }
+                </script>
+            </div>
+        </div>
+        
+        <div class="box1" id="ACERCA DE">
+            <h3>Acerca de</h3>
+            <form action="/registrar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="email">Email:</label>
+                <input type="text" id="curso" name="curso" required>
+                <label for="ensaje">Memsaje:</label>
+                <input type="text" id="edad" name="edad" required>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Contacto : atencion15@ceccytem.com</p>
+        <p>Telefono: 55 8932 1473</p>
+        <p>Horarios de atención: 7:00am - 3:00pm</p>
+    </footer>
+</body>
+</html>
